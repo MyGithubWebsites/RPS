@@ -1,0 +1,54 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.game-container {
+    text-align: center;
+}
+
+.btn {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease; /* Add transition for smoother animation */
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.shake-image {
+    animation: shake 0.3s ease-in-out 0s infinite alternate; /* Add shaking animation */
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333;
+    animation: shake 0.3s ease-in-out 0s infinite alternate; /* Add shaking animation */
+}
+
+.computer-choice {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(5px); /* Adjust the distance of the shake */
+    }
+}
